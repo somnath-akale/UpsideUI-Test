@@ -1,0 +1,292 @@
+html,body{width:100%; height:100%; background-color:#fff; overflow:hidden;  }
+body{ font-family:'Lato_Regular', Arial, sans-serif; color: #fff; font-size:16px; -webkit-text-size-adjust:100%;-webkit-tap-highlight-color: rgba(0,0,0,0);   display: table;}
+html { -webkit-text-size-adjust: 100%; }
+.clearfix:after{content:"."; display:block; clear:both; visibility:hidden; line-height:0; height:0}
+.clearfix{display:inline-block}
+.clearfix[class]{display:block}
+html[xmlns] .clearfix{display:block} 
+* html .clearfix{height:1%}
+img{-webkit-touch-callout:none; -webkit-user-select:none}
+strong{font-weight:bold;}
+*,
+*:after,
+*:before,*::after, *::before  {-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;}
+
+
+.wrapper{max-width:1010px; margin:0 auto; background: url("../images/bg.png") no-repeat scroll 0 0 transparent;min-height: 650px;}
+/* _______________________Add CSS Here _______________________*/
+ 
+
+:root {
+    --color1: #f28926;
+    --color2: #000000;
+    --color3: #ffffff;
+  }
+  
+  .container {
+    background-repeat: no-repeat;
+    background-image: url("../images/header.png"), url("../images/footer.png");
+    background-position: left top, 210% bottom;
+    max-width: 100%;
+    height: 100vh;
+    padding: 80px 10px;
+    color: #707070;
+  }
+  
+  .tab_header {
+    margin: 0 auto;
+    text-align: center;
+    color: var(--color1);
+    font-size: 30px;
+    font-weight: 600;
+    position: relative;
+    width: 250px;
+    margin-bottom: 65px;
+  }
+  
+  .tab_header:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    background-image: url("../images/icon_7.png");
+    background-repeat: no-repeat;
+    height: 70px;
+    left: -22%;
+    top: 25%;
+  }
+  .tab_header::before {
+    content: "";
+    position: absolute;
+    background-image: url("../images/icon_10.png");
+    background-repeat: no-repeat;
+    height: 70px;
+    width: 100%;
+    left: 90%;
+    top: 25%;
+  }
+  .tab_header h1::before {
+    content: "";
+    position: absolute;
+    background-image: url("../images/icon_13.png");
+    background-repeat: no-repeat;
+    height: 39px;
+    width: 100%;
+    left: 45%;
+    top: 140%;
+  }
+  .tabs-btn {
+    text-align: center;
+    position: relative;
+    z-index: 999;
+  }
+  .tabs-btn p {
+    color: var(--color2);
+    margin-top: 20px;
+  }
+  
+  .tab-btn {
+    background: var(--color3);
+    padding: 10px 45px;
+    color: var(--color2);
+    border: 2px solid var(--color1);
+    border-radius: 50px;
+    text-decoration: none;
+    margin-bottom: 20px;
+  }
+  
+  .tab-btn:nth-of-type(2) {
+    margin: 0 60px;
+  }
+  
+  .m_title {
+    text-align: center;
+    color: var(--color2);
+    position: relative;
+    top: -60px;
+  }
+  
+  .m_title span {
+    font-size: 45px;
+    border-radius: 5;
+    font-weight: bold;
+    position: relative;
+  }
+  .m_title span::after {
+    content: " ";
+    position: absolute;
+    bottom: -10px;
+    width: 100%;
+    height: 10px;
+    background: var(--color1);
+    border-radius: 5px;
+    left: 0;
+  }
+  
+  .logo_img {
+    max-width: 100%;
+    height: auto;
+    position: relative;
+    top: 50px;
+    right: 10px;
+  }
+  
+  .q-section {
+    text-align: center;
+  }
+  .q-section a {
+    color: var(--color2);
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 110px;
+    width: 450px;
+    border: 2px solid var(--color2);
+    background: var(--color3);
+    border-radius: 30px;
+  }
+  .q-section img {
+    display: block;
+    margin: 10px auto;
+  }
+  
+  .tab-1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 35px 20px;
+  }
+  .tab-1 p {
+    margin-bottom: 10px;
+    font-size: 18px;
+    line-height: 1.1;
+  }
+  .tab-1 .tab-section-1 {
+    padding: 10px;
+  }
+  .tab-1 .tab-section-2 {
+    padding: 10px;
+  }
+  
+  .tab-2 {
+    padding: 35px 25px;
+  }
+  .tab-2 h1 {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .tab-2 .tab-section-1 {
+    padding: 20px 0;
+    font-size: 18px;
+    line-height: 1.1;
+  }
+  .tab-2 .tab-section-2 {
+    text-align: center;
+  }
+  .tab-2 .tab-section-2 img {
+    margin: 0 30px;
+  }
+  
+  .tab-3 {
+    padding: 10px 25px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 18px;
+    line-height: 1.1;
+  width: 100%;
+  }
+  
+  .tab-h1 {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px;
+  }
+  
+  .tab-3 .tab-section-1 {
+    margin-right: 10px;
+    width: 33%;
+  position: relative;
+  }
+  .tab-3 .tab-section-1::after {
+  content: '';
+  position: absolute;
+  background-image: url("../images/icon_5.png");
+  background-repeat: no-repeat;
+  right: 0;
+  top: 45%;
+  width: 30px;
+  height: 100px;    
+  }
+  
+  .tab-3 .tab-section-2 {
+  margin-right: 25px;
+  width: 33%;
+  position: relative;
+  }
+  .tab-3 .tab-section-2::after {
+      content: '';
+      position: absolute;
+      background-image: url("../images/icon_5.png");
+      background-repeat: no-repeat;
+      right: -24px;
+      top: 45%;
+      width: 30px;
+      height: 100px;    
+      }
+  .tab-3 .tab-section-3 {
+      width: 33%;
+  
+  }
+  
+  /* The Modal (background) */
+  
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 9999; /* Sit on top */
+    color: var(--color2);
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+  }
+  
+  .tabName {
+    position: absolute;
+    background: var(--color1);
+    top: -15px;
+    width: 100px;
+    height: 35px;
+    text-align: center;
+    line-height: 30px;
+    color: var(--color3);
+    border-radius: 30px;
+    font-weight: 800;
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 13% auto; /* 15% from the top and centered */
+    padding: 20px;
+    position: relative;
+    border: 2px solid var(--color1);
+    border-radius: 30px;
+    width: 60%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
